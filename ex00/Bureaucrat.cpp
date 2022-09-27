@@ -6,7 +6,7 @@
 /*   By: hcremers <hcremers@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 15:35:24 by hcremers          #+#    #+#             */
-/*   Updated: 2022/09/23 16:35:13 by hcremers         ###   ########.fr       */
+/*   Updated: 2022/09/27 13:23:26 by hcremers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ Bureaucrat::Bureaucrat(std::string name, int grade) : _name(name)
 	return;
 }
 
-Bureaucrat::Bureaucrat(const Bureaucrat& src) : _grade(src.getGrade()), _name(src.getName())
+Bureaucrat::Bureaucrat(const Bureaucrat& src) : _name(src.getName()), _grade(src.getGrade())
 {
 	return;
 }
